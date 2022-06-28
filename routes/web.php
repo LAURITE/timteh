@@ -37,3 +37,9 @@ Route::get('/recipe/category/step/{id}', [StepController::class, 'index']);
 
 Route::post('/search', [RecipeController::class, 'search']);
  
+Route::get('/register', 'RegistrationController@create');
+Route::post('register', 'RegistrationController@store');
+
+Route::get('/login', 'SessionsController@create');
+Route::post('/login', 'SessionsController@store');
+Route::get('/logout', 'SessionsController@destroy');
