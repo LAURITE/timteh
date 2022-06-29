@@ -130,6 +130,8 @@ public function finishUpdate(request $request){
     $recipe=Recipe::find($request->id);
 
     $recipe->recipe_name=$request->recipe_name;
+    $recipe->product=$request->product;
+    $recipe->recipe_steps=$request->recipe_steps;
     $recipe->save();
     return redirect('recipe/category/'. $recipe->category_id);
 

@@ -20,7 +20,7 @@
 <td> {{ $recipe->recipe_name }} </td>
 <td> {{ $recipe->category->id }} </td>
 <td>
-   <img src='{{asset($recipe->photo)}}' width='50' height='50'/>
+   <img src='{{asset($recipe->photo)}}' width='150' height='150'/>
 </td>
  <td> <form method="POST"
 
