@@ -2,7 +2,7 @@
 <html>
 <head>
  <title>Categories</title>
- <link rel="stylesheet" type="text/css" href="css/categories.css" />
+ <link rel="stylesheet" type="text/css" href="css/categories.css"/>
 </head>
 <body>
  @if (count($categories) == 0)
