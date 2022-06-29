@@ -19,7 +19,7 @@
  <td> {{ $category->id }} </td>
 <td> {{ $category->category_name }} </td>
 <td>
-   <img src='{{asset($category->cphoto)}}' width='50' height='50'/>
+   <img src='{{asset($category->cphoto)}}' width='150' height='150'/>
 </td>
 <td> <input type="button" value="show"
 onclick="showRecipes({{ $category->id }})"> </td>

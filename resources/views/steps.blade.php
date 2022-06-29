@@ -14,7 +14,7 @@ action="/recipeedit ">
  <td> Recipe Name </td>
  <td> Category ID </td>
  <td> Ingredients</td>
- <td> How to cook it</td>
+ <td> Steps</td>
  <td> </td>
  </tr>
  @foreach ($recipes as $recipe)
@@ -25,7 +25,7 @@ action="/recipeedit ">
 <td> {{ $recipe->product }} </td>
 <td> {{ $recipe->recipe_steps }} </td>
 <td>
-   <img src='{{asset($recipe->photo)}}' width='50' height='50'/>
+   <img src='{{asset($recipe->photo)}}' width='250' height='250'/>
 </td>
 @endforeach
 
